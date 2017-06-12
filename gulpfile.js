@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 const scss = require('gulp-sass');
 const concat = require('gulp-concat');
-const babel = require('gulp-babel');
+//const babel = require('gulp-babel');
 //const debug = require('gulp-debug');
 const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
@@ -12,11 +12,10 @@ const minifyCss = require('gulp-minify-css');
 const uglify = require('gulp-uglify');
 const path = require('path');
 const webpack = require('webpack');
-const named = require('vinyl-named');
 const gulpSequence = require('gulp-sequence');
-const react = require('gulp-react');
+//const react = require('gulp-react');
 const util = require('gulp-util');
-const WebpackDevServer = require("webpack-dev-server");
+//const WebpackDevServer = require("webpack-dev-server");
 const webpackConfig = require('./webpack.config.js');
 
 gulp.task('styles', function() {
