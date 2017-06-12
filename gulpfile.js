@@ -3,7 +3,6 @@
 const gulp = require('gulp');
 const scss = require('gulp-sass');
 const concat = require('gulp-concat');
-//const babel = require('gulp-babel');
 //const debug = require('gulp-debug');
 const del = require('del');
 const sourcemaps = require('gulp-sourcemaps');
@@ -13,9 +12,7 @@ const uglify = require('gulp-uglify');
 const path = require('path');
 const webpack = require('webpack');
 const gulpSequence = require('gulp-sequence');
-//const react = require('gulp-react');
 const util = require('gulp-util');
-//const WebpackDevServer = require("webpack-dev-server");
 const webpackConfig = require('./webpack.config.js');
 
 gulp.task('styles', function() {
@@ -50,9 +47,7 @@ gulp.task("webpack", function(callback) {
 
 gulp.task('js', function() {
     return gulp.src(['./tmp/js/*.js'])
-        //.pipe(sourcemaps.init())
         .pipe(concat('all.js'))
-        //.pipe(sourcemaps.write())
         .pipe(gulp.dest('public/js'));
 });
 

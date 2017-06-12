@@ -3,7 +3,8 @@ path = require('path');
 module.exports = {
     entry: {
         1: './frontend/js/1.js',
-        2: './frontend/js/2.jsx'
+        2: './frontend/js/2.jsx',
+        app: './frontend/js/app/index.js'
     },
     output: {
         path: path.resolve(__dirname, './tmp/js/'),

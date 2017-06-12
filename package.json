@@ -15,6 +15,7 @@
     "babel-preset-react": "^6.24.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
     "gulp-minify-css": "^1.2.4",
@@ -25,7 +26,8 @@
     "gulp-util": "^3.0.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "react-redux": "^5.0.5",
+    "redux": "^3.6.0",
+    "webpack": "^2.6.1"
   }
 }
