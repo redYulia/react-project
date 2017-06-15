@@ -4,7 +4,7 @@ module.exports = {
     entry: {
         1: './frontend/js/1.js',
         2: './frontend/js/2.jsx',
-        app: './frontend/js/app/index.js'
+        app: './src/index.js'
     },
     output: {
         path: path.resolve(__dirname, './tmp/js/'),
@@ -22,8 +22,12 @@ module.exports = {
                 exclude: [/node_modules/],
                 loader: "babel-loader",
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'stage-0', 'react']
                 }
+            },
+            {
+                test:   /\.css$/,
+                loader: "style-loader!css-loader"
             }
         ]
     }
