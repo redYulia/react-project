@@ -8,8 +8,8 @@ export default class Admin extends Component {
         return <div>
             <p>Admin page</p>
             <ul>
-                <li><Link to='/admin/somepage'>Some Page</Link></li>
-                <li><Link to='/admin/banlist'>Ban List</Link></li>
+                <li><Link to='/admin/somepage'>Admin Some Page</Link></li>
+                <li><Link to='/admin/banlist'>Admin Ban List</Link></li>
             </ul>
             <Switch>
                 <Route path='/admin/somepage' component={SomePage} />

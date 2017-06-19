@@ -7,24 +7,24 @@ import configureStore from './store/configureStore'
 import Admin from './components/Admin'
 import Genre from './components/Genre'
 import Home from './components/Home'
-import BanList from './components/BanList'
-import SomePage from './components/SomePage'
+import NotFound from './components/NotFound'
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 
 const store = configureStore()
 
 console.log(store);
 
 render((
-    <BrowserRouter>
+    <HashRouter>
         <App>
             <Switch>
                 <Route exact path='/' component={Home} />
                 <Route path='/genre' component={Genre} />
                 <Route path='/admin' component={Admin} />
+                <Route path='*' component={NotFound} />
             </Switch>
         </App>
-    </BrowserRouter>),
+    </HashRouter>),
     document.getElementById('root')
 );

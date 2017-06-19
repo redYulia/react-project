@@ -8,8 +8,8 @@ export default class Genre extends Component {
         return <div>
             <p>Genre page</p>
             <ul>
-                <li><Link to='/genre/somepage'>Genre Some Page</Link></li>
-                <li><Link to='/genre/banlist'>Genre Ban List</Link></li>
+                <li><Link to='/genre/somepage'>Some Page</Link></li>
+                <li><Link to='/genre/banlist'>Ban List</Link></li>
             </ul>
             <Switch>
                 <Route path='/genre/somepage' component={SomePage} />
