@@ -7,8 +7,8 @@ import configureStore from './store/configureStore'
 import Admin from './components/Admin'
 import Genre from './components/Genre'
 import Home from './components/Home'
-import BanList from './components/Genre'
-import SomePage from './components/Home'
+import BanList from './components/BanList'
+import SomePage from './components/SomePage'
 
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
@@ -19,14 +19,10 @@ console.log(store);
 render((
     <BrowserRouter>
         <App>
-            
             <Switch>
                 <Route exact path='/' component={Home} />
-                <Admin>
-                    <Route path='/admin/somepage' component={SomePage} />
-                    <Route path='/admin/banlist' component={BanList} />
-                </Admin>
                 <Route path='/genre' component={Genre} />
+                <Route path='/admin' component={Admin} />
             </Switch>
         </App>
     </BrowserRouter>),
